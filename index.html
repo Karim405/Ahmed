@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Abdelrahim Portfolio</title>
+    <style>
+        /* خلفية متدرجة متحركة */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(270deg, #1f1c2c, #928dab, #6a11cb, #2575fc);
+            background-size: 800% 800%;
+            animation: gradientMove 15s ease infinite;
+            color: #fff;
+        }
+        @keyframes gradientMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 20px 20px;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+        }
+        .links {
+            margin-top: 15px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #fff;
+            background: #6a11cb;
+            transition: 0.3s;
+        }
+        .links a:hover {
+            background: #2575fc;
+        }
+        h1 {
+            margin-top: 15px;
+            font-size: 2.5em;
+        }
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .skill-box:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Projects / Content Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .project-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .project-box:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .project-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            color: #fff;
+        }
+        .project-box p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* Key Strengths as Cards */
+        .strengths {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+        .strength-box {
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s, background 0.3s;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        }
+        .strength-box:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .strength-box b {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- صورتك -->
+        <img src="images/WhatsApp Image 2025-08-17 at 13.48.11_05fe2df1.jpg" alt="Ahmed Abdelrahim Photo">
+        <h1>Ahmed Abdelrahim</h1>
+        <div class="links">
+            <a href="mailto:Ahmedmohamedqweetttt@gmail.com" target="_blank">📧 Email Me</a>
+            <a href="https://www.linkedin.com/in/ahmed-abdelrahim-3890aa30b" target="_blank">💼 LinkedIn</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            My name is <b>Ahmed Abdelrahim</b>, a Computer Science student at Helwan University with strong skills in programming, data analysis, and web development.
+            I have worked on many academic and personal projects, which gave me practical experience in problem-solving and implementing real solutions.
+        </p>
+        <p>
+            I completed intensive training at <b>NTI</b> specialized in <b>Machine Learning</b>, where I built intelligent models and applied AI techniques to real-world problems.
+            I also finished a full track in <b>Frontend Development</b>, mastering HTML, CSS, and JavaScript, and built responsive, user-friendly websites.
+        </p>
+        <p>
+            I also joined <b>WE Telecom Egypt</b> training in <b>Data Analysis</b>, where I analyzed datasets, created dashboards, and delivered insights that support business decisions.
+        </p>
+        <p>
+            I am highly passionate about continuous learning and exploring new technologies. With strong attention to detail, creativity, and good time management,
+            my goal is to combine knowledge in data, programming, and AI to deliver innovative solutions with real impact.
+        </p>
+
+        <!-- Strengths Section -->
+        <h2>Key Strengths</h2>
+        <div class="strengths">
+            <div class="strength-box"><b>Strong Technical Skills:</b> Proficient in Python, SQL, Machine Learning, and Data Analysis.</div>
+            <div class="strength-box"><b>Frontend Development Expertise:</b> Able to design and build modern, responsive, and user-friendly websites.</div>
+            <div class="strength-box"><b>Analytical Thinking:</b> Skilled at turning raw data into clear insights that support business decisions.</div>
+            <div class="strength-box"><b>Problem-Solving Mindset:</b> Experienced in algorithms, debugging, and finding efficient solutions to complex challenges.</div>
+            <div class="strength-box"><b>Creativity & Innovation:</b> Capable of developing unique projects that blend technical and creative skills.</div>
+            <div class="strength-box"><b>Strong Communication:</b> Able to explain technical concepts in simple, clear ways for both technical and non-technical audiences.</div>
+            <div class="strength-box"><b>Teamwork & Collaboration:</b> Experienced in working with groups on academic and training projects, always contributing effectively.</div>
+            <div class="strength-box"><b>Adaptability:</b> Quick to learn new tools, technologies, and environments to keep up with industry trends.</div>
+            <div class="strength-box"><b>Attention to Detail:</b> Ensures code quality, data accuracy, and professional results in every project.</div>
+            <div class="strength-box"><b>Ambition & Passion:</b> Highly motivated to grow, learn, and make a real impact through technology.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Content / Projects</h2>
+        <div class="projects">
+            <div class="project-box">
+                <h3>🤖 Price Prediction Model (NTI - Machine Learning)</h3>
+                <p>
+                    Built a machine learning model to predict product prices based on multiple factors such as demand, supply, and features.  
+                    <b>Challenges:</b> Handling missing data and noisy datasets.  
+                    <b>Solutions:</b> Applied data preprocessing, feature engineering, and tuned algorithms like Linear Regression and Random Forest to improve accuracy.  
+                    <b>Impact:</b> Helped in understanding how data-driven pricing can support businesses in competitive markets.
+                </p>
+            </div>
+            <div class="project-box">
+                <h3>📊 Car Sales Analysis (WE Telecom Egypt - Data Analysis)</h3>
+                <p>
+                    Conducted a full data analysis project on car sales over the past 5 years.  
+                    <b>Goal:</b> Identify the most sold car models and analyze sales trends.  
+                    <b>Challenges:</b> Large datasets with inconsistent formatting.  
+                    <b>Solutions:</b> Cleaned the data using Python (Pandas) and SQL, visualized sales trends with Power BI, and built dashboards.  
+                    <b>Result:</b> Clear insights into sales performance, helping businesses decide which models to focus on.
+                </p>
+            </div>
+            <div class="project-box">
+                <h3>👕 Clothing Sales Data Analysis (Data Analysis Project)</h3>
+                <p>
+                    Analyzed sales data for a clothing store to find out the <b>best performing branches</b> and most popular items.  
+                    <b>Goal:</b> Support decision-making and improve sales strategy.  
+                    <b>Tools:</b> Python (Pandas, Matplotlib), SQL, and Power BI.  
+                    <b>Impact:</b> Helped management focus on top-selling branches and optimize inventory planning.
+                </p>
+            </div>
+            <div class="project-box">
+                <h3>🧩 Sudoku Solver (University Project)</h3>
+                <p>
+                    Developed a Sudoku solver application that automatically fills in Sudoku puzzles using backtracking algorithms.  
+                    <b>Challenges:</b> Ensuring the algorithm solved puzzles efficiently without long runtimes.  
+                    <b>Solutions:</b> Optimized the algorithm with constraint propagation and recursion.  
+                    <b>Impact:</b> Built strong problem-solving and algorithm design skills.
+                </p>
+            </div>
+            <div class="project-box">
+                <h3>🍴 Restaurant Management System (University Project)</h3>
+                <p>
+                    Built a restaurant management system that allows ordering, menu updates, and bill generation.  
+                    <b>Challenges:</b> Designing an easy-to-use interface and handling multiple users.  
+                    <b>Solutions:</b> Applied database design with SQL and created a simple frontend to interact with the system.  
+                    <b>Result:</b> Practical project simulating real-world restaurant operations.
+                </p>
+            </div>
+            <div class="project-box">
+                <h3>🌐 Frontend Development Projects</h3>
+                <p>
+                    Designed and built multiple responsive websites using HTML, CSS, and JavaScript.  
+                    <b>Focus:</b> Modern UI/UX design and mobile-first development.  
+                    <b>Result:</b> Created clean, user-friendly interfaces and improved frontend coding skills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-box">Python</div>
+            <div class="skill-box">SQL</div>
+            <div class="skill-box">Machine Learning</div>
+            <div class="skill-box">Data Analysis</div>
+            <div class="skill-box">Power BI</div>
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Frontend Development</div>
+            <div class="skill-box">Problem Solving</div>
+            <div class="skill-box">Teamwork</div>
+        </div>
+    </section>
+</body>
+</html>
